@@ -1,0 +1,246 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  
+  :root{
+  font-size: 62.5%;
+  
+  }
+  
+  
+  body {
+
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    font-size: 1.6rem;
+  
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+  
+    
+  }
+
+
+  body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.hide {
+
+  display: none;
+
+}
+
+
+/*screenOne*/
+
+main {
+
+  border-radius: .5rem;
+  background: #FFF;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem ;
+  text-align: center;
+  width: min(42.8rem , 90%);
+}
+  
+h1 {
+  margin-bottom: 1.4rem;
+  
+}
+
+
+main h1 , h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #34355B;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+ 
+}
+
+main p {
+  font-family: 'DM Sans', sans-serif;
+  color: #34355B;
+
+
+font-size: 1.5rem;
+font-weight: 400;
+line-height: normal;
+
+margin-bottom: 2.6rem;
+}
+
+#cookie {
+
+cursor: pointer;
+
+}
+
+#cookie:hover {
+
+
+             animation: vibrate-2 200ms linear infinite both;
+
+}
+
+
+@keyframes vibrate-2 {
+  0% {
+            transform: translate(0);
+  }
+  20% {
+            transform: translate(.2rem, -2px);
+  }
+  40% {
+            transform: translate(.2rem, .2rem);
+  }
+  60% {
+            transform: translate(-2px, .2rem);
+  }
+  80% {
+            transform: translate(-2px, -2px);
+  }
+  100% {
+            transform: translate(0);
+  }
+}
+
+
+/*screenTwo*/
+
+
+
+
+
+h2 {
+
+margin-bottom: 1.7rem;
+
+}
+
+
+
+
+.screenTwo p {
+  box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+  background: #E4EDF1;
+  padding: 1rem;
+
+color: #000;
+font-family: 'Dancing Script', cursive;
+text-align: center;
+font-size: 2.4rem;
+font-weight: 400;
+line-height: normal;
+
+margin-bottom: 6.1rem;
+
+}
+
+/* formato do desafio */
+
+/*
+
+.screenTwo p {
+  animation: text 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+}
+
+@keyframes text {
+  0% {
+    letter-spacing: -0.5em;
+            transform: translateZ(0) translateY(200px);
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+         transform-origin: 50% 50%;
+
+  }
+}
+*/
+
+
+
+
+/* forma que achei interessante */
+
+.screenTwo p {
+  animation: animetion 1.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+}
+
+
+@keyframes animetion {
+  0% {
+            transform: translateY(20rem) scaleY(2.5) scaleX(0.2);
+            transform-origin: 50% 100%;
+            filter: blur(4rem);
+            opacity: 0;
+  }
+  100% {
+         transform: translateY(0) scaleY(1) scaleX(1);
+         transform-origin: 50% 50%;
+            filter: blur(0);
+   opacity: 1;
+  }
+}
+
+
+
+#cookieOpen {
+
+margin-bottom: 4.1rem;
+
+}
+
+#btnReset {
+  border-radius: .4rem;
+  background: #FF9500;
+  color: #FFF;
+  border: none;
+  padding: 1.6rem;
+
+  display: block;
+  margin: 0 auto;
+  
+  font-family: 'DM Sans', sans-serif;
+
+  cursor: pointer;
+ font-size: 1.5rem;
+ font-weight: 700;
+ line-height: normal;
+}
+
+#btnReset:hover {
+
+  background: #9e6008;
+
+
+}
